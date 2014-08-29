@@ -6625,7 +6625,7 @@ button.close {
   min-height: 100vh;
   min-width: 100vw;
   overflow: hidden;
-  background: url(/images/backgroundblur.png) no-repeat center center;
+  background: url(/images/sea-anchor.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -6654,12 +6654,24 @@ button.close {
 
 /* line 8, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .project {
-  margin-top: 50px;
+  margin-top: 40px;
   display: inline-block;
   vertical-align: middle; }
 
-/* line 15, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 13, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+#recent-projects {
+  margin-top: 70px; }
+
+/* line 16, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+#home-projects {
+  display: none; }
+
+/* line 19, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #site-content {
   background-color: white;
   padding-left: 15px;
   padding-right: 15px; }
+
+/* line 24, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+.fa-size {
+  font-size: 4em; }
