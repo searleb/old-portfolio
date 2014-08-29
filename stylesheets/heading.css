@@ -1,0 +1,26 @@
+/* line 1, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
+.non-mobile-wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+  background: url(/images/backgroundblur.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* line 11, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
+.mobile-wrapper {
+  position: relative;
+  min-height: 450px; }
+
+/* line 15, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
+#elevator-pitch {
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }

@@ -6620,7 +6620,7 @@ button.close {
   /* line 18, /Users/Bill/.rvm/gems/ruby-2.0.0-p481/gems/bootstrap-sass-3.2.0.0/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
-/* line 2, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 1, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
 .non-mobile-wrapper {
   min-height: 100vh;
   min-width: 100vw;
@@ -6631,12 +6631,12 @@ button.close {
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 12, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 11, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
 .mobile-wrapper {
   position: relative;
   min-height: 450px; }
 
-/* line 17, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 15, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
 #elevator-pitch {
   color: #ffffff;
   position: absolute;
@@ -6647,18 +6647,18 @@ button.close {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-/* line 27, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 4, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .container-fluid {
   padding-left: 0;
   padding-right: 0; }
 
-/* line 31, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 8, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .project {
   margin-top: 50px;
   display: inline-block;
   vertical-align: middle; }
 
-/* line 38, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 15, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #site-content {
   background-color: white;
   padding-left: 15px;
