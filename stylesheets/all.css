@@ -6620,17 +6620,19 @@ button.close {
   /* line 18, /Users/Bill/.rvm/gems/ruby-2.0.0-p481/gems/bootstrap-sass-3.2.0.0/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
-/* line 3, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
-#pitch-wrapper {
-  min-height: 100vh;
-  min-width: 100vw;
-  background: url(/images/backgroundblur.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+/* line 2, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+body html {
+  height: 100%; }
 
-/* line 13, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 6, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+#pitch-wrapper {
+  z-index: -1000; }
+  /* line 9, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+  #pitch-wrapper img {
+    max-height: 100%;
+    min-width: 100%; }
+
+/* line 14, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #elevator-pitch {
   color: #ffffff;
   position: absolute;
@@ -6641,25 +6643,18 @@ button.close {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-/* line 23, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 24, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .container-fluid {
   padding-left: 0;
   padding-right: 0; }
 
-/* line 27, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 28, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .project {
   margin-top: 50px;
   display: inline-block;
   vertical-align: middle; }
 
-@media screen and (max-width: 1024px) {
-  /* Specific to this particular image */
-  /* line 61, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
-  #background {
-    left: 50%;
-    margin-left: -512px;
-    /* 50% */ } }
-/* line 67, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 37, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #site-content {
   background-color: white;
   padding-left: 15px;
