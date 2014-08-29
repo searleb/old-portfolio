@@ -6621,18 +6621,22 @@ button.close {
   .hidden-print {
     display: none !important; } }
 /* line 2, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
-body html {
-  height: 100%; }
+.non-mobile-wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+  background: url(/images/backgroundblur.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-/* line 6, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
-#pitch-wrapper {
-  z-index: -1000; }
-  /* line 9, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
-  #pitch-wrapper img {
-    max-height: 100%;
-    min-width: 100%; }
+/* line 12, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+.mobile-wrapper {
+  position: relative;
+  min-height: 450px; }
 
-/* line 14, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 17, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #elevator-pitch {
   color: #ffffff;
   position: absolute;
@@ -6643,18 +6647,18 @@ body html {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-/* line 24, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 27, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .container-fluid {
   padding-left: 0;
   padding-right: 0; }
 
-/* line 28, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 31, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .project {
   margin-top: 50px;
   display: inline-block;
   vertical-align: middle; }
 
-/* line 37, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 38, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #site-content {
   background-color: white;
   padding-left: 15px;
