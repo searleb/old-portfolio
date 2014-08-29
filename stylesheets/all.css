@@ -6624,54 +6624,42 @@ button.close {
 #pitch-wrapper {
   min-height: 100vh;
   min-width: 100vw;
-  position: relative; }
+  background: url(/images/backgroundblur.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-/* line 8, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 13, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #elevator-pitch {
   color: #ffffff;
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-/* line 15, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 23, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .container-fluid {
   padding-left: 0;
   padding-right: 0; }
 
-/* line 19, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 27, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .project {
   margin-top: 50px;
   display: inline-block;
   vertical-align: middle; }
 
-/* line 30, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
-#background {
-  background: url(/images/backgroundblur.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -100; }
-
 @media screen and (max-width: 1024px) {
   /* Specific to this particular image */
-  /* line 53, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+  /* line 61, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
   #background {
     left: 50%;
     margin-left: -512px;
     /* 50% */ } }
-/* line 59, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 67, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #site-content {
   background-color: white;
   padding-left: 15px;
