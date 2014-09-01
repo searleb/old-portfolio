@@ -1,14 +1,15 @@
 $(document).ready(function(){
-	var width = $(window).width();
+	var t = new Trianglify({
+		noiseIntensity: 0,
+	});
+	var width = $(document).width();
 	var height = $(document).height();
-	var t = new Trianglify();
 	var pattern = t.generate(width, height);
-
 	$('#background').css({
 		'background': pattern.dataUrl
 	});
 	$('#contact').css({
-		'background': pattern.dataUrl +'no-repeat center center fixed'
+		'background': pattern.dataUrl
 	});
 })
 ;

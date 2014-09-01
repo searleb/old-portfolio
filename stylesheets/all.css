@@ -8844,10 +8844,15 @@ button.close {
   padding-right: 15px; }
 
 /* line 26, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+#background {
+  background-repeat: none; }
+
+/* line 29, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #contact {
   padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  background-repeat: none; }
 
-/* line 30, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 34, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .fa-size {
   font-size: 4em; }
