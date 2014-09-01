@@ -1,22 +1,15 @@
 /* line 1, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
-#background-color {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-/* line 7, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
 .non-mobile-wrapper {
   min-height: 100vh;
   min-width: 100vw;
   overflow: hidden; }
 
-/* line 12, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
+/* line 6, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
 .mobile-wrapper {
   position: relative;
   min-height: 400px; }
 
-/* line 16, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
+/* line 10, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
 #elevator-pitch {
   color: #ffffff;
   position: absolute;
