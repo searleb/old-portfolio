@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	$('#show-more').on('click', function(){
-		$('#home-projects').velocity("fadeIn", { duration: 1000 });
-		$('#show-more').velocity("scroll", { duration: 1000, easing: "swing" });
+	$('.show-more').on('click', function(){
+		$('#more-projects').velocity("fadeIn", { duration: 1000 });
+		$('.show-more').velocity("scroll", { duration: 1000, easing: "swing" }).css({ "display": "none" });
 	});
 
 	$('#weatherify-link').on('click', function(){

@@ -9816,6 +9816,16 @@ var svgDraw = function (t){
 	$('#contact').css({
 		'background': pattern.dataUrl
 	});
+$('.btn').hover(
+  function() {
+    $( this ).css({
+    	'background-image': pattern.dataUrl
+    });
+  }, function() {
+    $( this ).css({
+    	'background-image': 'none'
+    });
+  });
 };
 
 $(document).ready(function(){
@@ -9824,20 +9834,219 @@ $(document).ready(function(){
 $(window).resize(function() {
  svgDraw(t);
 });
+// /*
+
+//     countUp.js
+//     by @inorganik
+
+// */
+
+// // target = id of html element or var of previously selected html element where counting occurs
+// // startVal = the value you want to begin at
+// // endVal = the value you want to arrive at
+// // decimals = number of decimal places, default 0
+// // duration = duration of animation in seconds, default 2
+// // options = optional object of options (see below)
+
+// function countUp(target, startVal, endVal, decimals, duration, options) {
+
+//     // make sure requestAnimationFrame and cancelAnimationFrame are defined
+//     // polyfill for browsers without native support
+//     // by Opera engineer Erik Möller
+//     var lastTime = 0;
+//     var vendors = ['webkit', 'moz', 'ms'];
+//     for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+//         window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+//         window.cancelAnimationFrame =
+//           window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+//     }
+//     if (!window.requestAnimationFrame) {
+//         window.requestAnimationFrame = function(callback, element) {
+//             var currTime = new Date().getTime();
+//             var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+//             var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+//               timeToCall);
+//             lastTime = currTime + timeToCall;
+//             return id;
+//         }
+//     }
+//     if (!window.cancelAnimationFrame) {
+//         window.cancelAnimationFrame = function(id) {
+//             clearTimeout(id);
+//         }
+//     }
+
+//      // default options
+//     this.options = options || {
+//         useEasing : true, // toggle easing
+//         useGrouping : true, // 1,000,000 vs 1000000
+//         separator : ',', // character to use as a separator
+//         decimal : '.', // character to use as a decimal
+//     }
+//     if (this.options.separator == '') this.options.useGrouping = false;
+//     if (this.options.prefix == null) this.options.prefix = '';
+//     if (this.options.suffix == null) this.options.suffix = '';
+
+//     var self = this;
+
+//     this.d = (typeof target === 'string') ? document.getElementById(target) : target;
+//     this.startVal = Number(startVal);
+//     this.endVal = Number(endVal);
+//     this.countDown = (this.startVal > this.endVal) ? true : false;
+//     this.startTime = null;
+//     this.timestamp = null;
+//     this.remaining = null;
+//     this.frameVal = this.startVal;
+//     this.rAF = null;
+//     this.decimals = Math.max(0, decimals || 0);
+//     this.dec = Math.pow(10, this.decimals);
+//     this.duration = duration * 1000 || 2000;
+
+//     this.version = function () { return '1.2.0' }
+
+//     // Robert Penner's easeOutExpo
+//     this.easeOutExpo = function(t, b, c, d) {
+//         return c * (-Math.pow(2, -10 * t / d) + 1) * 1024 / 1023 + b;
+//     }
+//     this.count = function(timestamp) {
+
+//         if (self.startTime === null) self.startTime = timestamp;
+
+//         self.timestamp = timestamp;
+
+//         var progress = timestamp - self.startTime;
+//         self.remaining = self.duration - progress;
+
+//         // to ease or not to ease
+//         if (self.options.useEasing) {
+//             if (self.countDown) {
+//                 var i = self.easeOutExpo(progress, 0, self.startVal - self.endVal, self.duration);
+//                 self.frameVal = self.startVal - i;
+//             } else {
+//                 self.frameVal = self.easeOutExpo(progress, self.startVal, self.endVal - self.startVal, self.duration);
+//             }
+//         } else {
+//             if (self.countDown) {
+//                 var i = (self.startVal - self.endVal) * (progress / self.duration);
+//                 self.frameVal = self.startVal - i;
+//             } else {
+//                 self.frameVal = self.startVal + (self.endVal - self.startVal) * (progress / self.duration);
+//             }
+//         }
+
+//         // decimal
+//         self.frameVal = Math.round(self.frameVal*self.dec)/self.dec;
+
+//         // don't go past endVal since progress can exceed duration in the last frame
+//         if (self.countDown) {
+//             self.frameVal = (self.frameVal < self.endVal) ? self.endVal : self.frameVal;
+//         } else {
+//             self.frameVal = (self.frameVal > self.endVal) ? self.endVal : self.frameVal;
+//         }
+
+//         // format and print value
+//         self.d.innerHTML = self.formatNumber(self.frameVal.toFixed(self.decimals));
+
+//         // whether to continue
+//         if (progress < self.duration) {
+//             self.rAF = requestAnimationFrame(self.count);
+//         } else {
+//             if (self.callback != null) self.callback();
+//         }
+//     }
+//     this.start = function(callback) {
+//         self.callback = callback;
+//         // make sure values are valid
+//         if (!isNaN(self.endVal) && !isNaN(self.startVal)) {
+//             self.rAF = requestAnimationFrame(self.count);
+//         } else {
+//             console.log('countUp error: startVal or endVal is not a number');
+//             self.d.innerHTML = '--';
+//         }
+//         return false;
+//     }
+//     this.stop = function() {
+//         cancelAnimationFrame(self.rAF);
+//     }
+//     this.reset = function() {
+//         self.startTime = null;
+//         self.startVal = startVal;
+//         cancelAnimationFrame(self.rAF);
+//         self.d.innerHTML = self.formatNumber(self.startVal.toFixed(self.decimals));
+//     }
+//     this.resume = function() {
+//         self.startTime = null;
+//         self.duration = self.remaining;
+//         self.startVal = self.frameVal;
+//         requestAnimationFrame(self.count);
+//     }
+//     this.formatNumber = function(nStr) {
+//         nStr += '';
+//         var x, x1, x2, rgx;
+//         x = nStr.split('.');
+//         x1 = x[0];
+//         x2 = x.length > 1 ? self.options.decimal + x[1] : '';
+//         rgx = /(\d+)(\d{3})/;
+//         if (self.options.useGrouping) {
+//             while (rgx.test(x1)) {
+//                 x1 = x1.replace(rgx, '$1' + self.options.separator + '$2');
+//             }
+//         }
+//         return self.options.prefix + x1 + x2 + self.options.suffix;
+//     }
+
+//     // format startVal on initialization
+//     self.d.innerHTML = self.formatNumber(self.startVal.toFixed(self.decimals));
+// }
+
+// // Example:
+// // var numAnim = new countUp("SomeElementYouWantToAnimate", 0, 99.99, 2, 2.5);
+// // numAnim.start();
+// // with optional callback:
+// // numAnim.start(someMethodToCallOnComplete);
+// $(document).ready(function() {
+
+// var money = 5.12;
+
+// var getMoney = function() {
+// 	money = Math.random() * (20 - 0) + 0;
+// 	money = money.toFixed(2);
+	
+// 	var sliderPercent = ((money / 20) * 100);
+		
+// 		if (money > 10)
+// 			$("#statement").text("Looks like coffee is on me!");
+// 		else
+// 			$("#statement").text("Looks like coffee is on you!");
+
+// 		var numAnim = new countUp("funds", 0, money, 2, 1.5);
+// 		numAnim.start();
+		
+// 		$('#money-slider').velocity({
+// 		  height: sliderPercent + '%'
+// 		}, {
+// 			duration: 1500,
+// 		  easing: 'swing'
+// 		});
+// };
+
+// getMoney();
+
+// });
 // media queries based on iphone and ipad sizes
     var isMobile = window.matchMedia("only screen and (min-device-width: 320px) and (max-device-width: 568px)");
     var isTablet = window.matchMedia("only screen and (min-device-width: 768px) and (max-device-width: 1024px)");
 
-$(document).ready(function() {      
+$('#background').load(function() {      
     if ((isMobile.matches) || (isTablet.matches))  {
-        $('#background').addClass('mobile-wrapper');
+        $('#background').removeClass('non-mobile-wrapper').addClass('mobile-wrapper');
     }
  });
 
 $(document).ready(function(){
-	$('#show-more').on('click', function(){
-		$('#home-projects').velocity("fadeIn", { duration: 1000 });
-		$('#show-more').velocity("scroll", { duration: 1000, easing: "swing" });
+	$('.show-more').on('click', function(){
+		$('#more-projects').velocity("fadeIn", { duration: 1000 });
+		$('.show-more').velocity("scroll", { duration: 1000, easing: "swing" }).css({ "display": "none" });
 	});
 
 	$('#weatherify-link').on('click', function(){
@@ -9864,21 +10073,15 @@ $(document).ready(function(){
 		window.open('http://fancifulnerd.com/', '_blank');
 	});
 });
- // $(".scroll").click(function(event){
- //         event.preventDefault();
- //         //calculate destination place
- //         var dest=0;
- //         if($(this.hash).offset().top > $(document).height()-$(window).height()){
- //              dest=$(document).height()-$(window).height();
- //         }else{
- //              dest=$(this.hash).offset().top;
- //         }
- //         //go to destination
- //         $('html,body').animate({scrollTop:dest}, 1000,'swing');
- //     });
 
 
 
 
 
 
+
+
+
+$(document).ready(function(){
+	$('body').velocity("fadeIn", { duration: 1500 });
+});

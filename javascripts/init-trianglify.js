@@ -12,6 +12,16 @@ var svgDraw = function (t){
 	$('#contact').css({
 		'background': pattern.dataUrl
 	});
+$('.btn').hover(
+  function() {
+    $( this ).css({
+    	'background-image': pattern.dataUrl
+    });
+  }, function() {
+    $( this ).css({
+    	'background-image': 'none'
+    });
+  });
 };
 
 $(document).ready(function(){

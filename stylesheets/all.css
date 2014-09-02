@@ -6622,18 +6622,21 @@ button.close {
     display: none !important; } }
 /* line 1, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
 .non-mobile-wrapper {
+  position: relative;
   min-height: 100vh;
   min-width: 100vw;
   overflow: hidden; }
 
-/* line 6, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
+/* line 7, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
 .mobile-wrapper {
   position: relative;
-  min-height: 400px; }
+  min-height: 400px;
+  max-width: 100%;
+  overflow: hidden; }
 
-/* line 10, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
+/* line 13, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/heading.css.scss */
 #elevator-pitch {
-  color: #ffffff;
+  color: #374140;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -8810,42 +8813,69 @@ button.close {
 .fa-meanpath:before {
   content: ""; }
 
-/* line 9, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 12, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+body {
+  color: #374140; }
+
+/* line 15, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .container-fluid {
   padding-left: 0;
   padding-right: 0; }
 
-/* line 13, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 19, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .project {
   margin-top: 20px;
   margin-bottom: 20px;
   display: inline-block;
   vertical-align: middle; }
 
-/* line 19, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 25, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #recent-projects {
   margin-top: 70px; }
 
-/* line 22, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
-#home-projects {
+/* line 28, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+#more-projects {
   display: none; }
 
-/* line 25, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 31, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #site-content {
   background-color: white;
   padding-left: 15px;
   padding-right: 15px; }
 
-/* line 30, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 36, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #background {
   background-repeat: none; }
 
-/* line 33, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 39, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #contact {
+  margin-top: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
   background-repeat: none; }
 
-/* line 38, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 45, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .fa-size {
-  font-size: 4em; }
+  font-size: 3.5em; }
+  /* line 47, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+  .fa-size p {
+    font-size: 0.4em; }
+
+/* line 51, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+a {
+  color: #374140; }
+
+/* line 54, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+a:hover {
+  color: #2A2C2B;
+  text-decoration: none; }
+
+/* line 58, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+article {
+  display: inline-block;
+  margin: 10px; }
+
+/* line 62, /Users/Bill/development/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+.btn {
+  border: 1px solid #374140;
+  border-radius: 4px; }
