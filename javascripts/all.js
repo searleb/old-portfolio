@@ -10041,16 +10041,6 @@ $(window).resize(function() {
 
   ga('create', 'UA-54388947-1', 'auto');
   ga('send', 'pageview');
-// media queries based on iphone and ipad sizes
-    var isMobile = window.matchMedia("only screen and (min-device-width: 320px) and (max-device-width: 568px)");
-    var isTablet = window.matchMedia("only screen and (min-device-width: 768px) and (max-device-width: 1024px)");
-
-$(document).ready(function() {      
-    if ((isMobile.matches) || (isTablet.matches))  {
-        $('#background').removeClass('non-mobile-wrapper').addClass('mobile-wrapper');
-    }
- });
-
 $(document).ready(function(){
 	$('.show-more').on('click', function(){
 		$('#more-projects').velocity("fadeIn", { duration: 1000 });
@@ -10091,5 +10081,9 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+	var height = $(window).height();
+		$('#background').css({
+			'min-height': height
+		});
 	$('body').velocity("fadeIn", { duration: 1500 });
 });
