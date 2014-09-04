@@ -8796,11 +8796,26 @@ body {
   color: #374140; }
 
 /* line 11, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+#lets-talk {
+  position: fixed;
+  width: 400px;
+  top: 19px;
+  right: -171px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: 1px 1px 5px 1px #374140;
+  -moz-box-shadow: 1px 1px 5px 1px #374140;
+  -o-box-shadow: 1px 1px 5px 1px #374140;
+  box-shadow: 1px 1px 5px 1px #374140; }
+
+/* line 26, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .container-fluid {
   padding-left: 0;
   padding-right: 0; }
 
-/* line 16, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 31, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #elevator-pitch {
   color: #374140;
   position: absolute;
@@ -8811,7 +8826,7 @@ body {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-/* line 27, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 42, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #hi {
   font-size: 5em;
   font-family: 'Pacifico', cursive;
@@ -8821,55 +8836,55 @@ body {
   transform: rotate(-20deg);
   padding-bottom: 30px; }
 
-/* line 37, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 52, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .project {
   margin-top: 20px;
   margin-bottom: 20px;
   display: inline-block;
   vertical-align: middle; }
 
-/* line 44, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 59, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #recent-projects {
   margin-top: 70px; }
 
-/* line 48, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 63, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #more-projects {
   display: none; }
 
-/* line 52, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 67, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #show-more-button {
-  padding-left: 15px; }
+  margin-left: 15px; }
 
-/* line 56, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 71, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #site-content {
   background-color: white;
   padding-left: 15px;
   padding-right: 15px; }
 
-/* line 62, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 77, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #background {
   position: relative;
   background-repeat: none; }
 
-/* line 67, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 82, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #contact {
   margin-top: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
   background-repeat: none; }
 
-/* line 74, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 89, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .fa-size {
   font-size: 3.5em; }
-  /* line 76, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+  /* line 91, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
   .fa-size p {
     font-size: 0.4em; }
 
-/* line 81, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 96, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 a {
   color: #374140; }
 
-/* line 84, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 99, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 a:hover {
   color: #2A2C2B;
   text-decoration: none; }
@@ -8881,7 +8896,7 @@ a:hover {
     padding-top: 6px; }
   100% {
     padding-top: 0px; } }
-/* line 100, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 115, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .fa-angle-down {
   cursor: pointer;
   position: absolute;
@@ -8890,15 +8905,15 @@ a:hover {
   -o-animation: bounce 1s infinite ease-in-out;
   animation: bounce 1s infinite ease-in-out; }
 
-/* line 110, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 124, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 article {
   display: inline-block;
   margin: 10px; }
-  /* line 113, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+  /* line 127, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
   article a > p {
     font-family: "Raleway", "Helvetica", sans-serif; }
 
-/* line 118, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 132, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .btn {
   border: 1px solid #374140;
   border-radius: 4px; }
