@@ -9923,8 +9923,12 @@ $(window).resize(function() {
   ga('send', 'pageview');
 $(document).ready(function(){
 	$('.show-more').on('click', function(){
-		$('#more-projects').velocity("fadeIn", { duration: 1000 });
-		$('.show-more').velocity("scroll", { duration: 1000, easing: "swing" }).css({ "display": "none" });
+			$('#more-projects').velocity("fadeIn", { duration: 1200 });
+			$('.show-more').velocity("scroll", { duration: 1200, easing: "ease-in-out" }).css({ "display": "none" });
+	});
+	
+	$('.fa-angle-down').on('click', function(){
+		$('#recent-projects').velocity("scroll", { duration: 1200, easing: "ease-in-out" });
 	});
 
 	$('#weatherify-link').on('click', function(){

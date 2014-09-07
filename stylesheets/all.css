@@ -8930,10 +8930,10 @@ article {
 
 /* line 147, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #contact {
-  -webkit-box-shadow: inset 0px -50px 60px -30px #374140;
-  -moz-box-shadow: inset 0px -50px 60px -30px #374140;
-  -o-box-shadow: inset 0px -50px 60px -30px #374140;
-  box-shadow: inset 0px -50px 60px -30px #374140;
+  -webkit-box-shadow: inset 0px -100px 30px -90px #374140;
+  -moz-box-shadow: inset 0px -100px 30px -90px #374140;
+  -o-box-shadow: inset 0px -100px 30px -90px #374140;
+  box-shadow: inset 0px -100px 30px -90px #374140;
   margin-top: 20px;
   padding-top: 40px;
   padding-bottom: 40px; }
