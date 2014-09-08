@@ -5,9 +5,9 @@ My Portfolio!
 -------------
 
 ### Built with:
-> Middleman
-> HAML
-> JS / jQuery
-> SASS
-> Velocity.js
-> Trianglify.js
+- Middleman
+- HAML
+- JS / jQuery
+- SASS
+- Velocity.js
+- Trianglify.js
