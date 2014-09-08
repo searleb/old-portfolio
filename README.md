@@ -1,9 +1,10 @@
 searleb.github.io
 =================
 
-== My Portfolio!
+My Portfolio!
+-------------
 
-=== Built with:
+### Built with:
 Middleman
 HAML
 JS / jQuery
