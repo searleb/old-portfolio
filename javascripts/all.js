@@ -9819,18 +9819,14 @@ $(document).ready(function(){
 			'min-height': height
 		});
 
-		$('#contact-container').css({
+		$(".contact-size").css({
 			'min-width': width,
-			'min-height': (height / 4) 
+			'min-height': (height / 2)
 		});
-		$('#contact-background-1').css({
-			'min-width': width,
-			'min-height': (height / 4) 
-		});
-		$('#contact-background-2').css({
-			'min-width': width,
-			'min-height': (height / 4) 
-		});
+		// $("#contact").css({
+		// 	'max-width': width
+		// });
+
 	
 	// call new svg and start recreate svg timeout
 	svgNew();
@@ -9884,7 +9880,7 @@ var svgDraw1 = function (resize){
 		});
 		$('#contact-background-1').css({
 			'min-width': svg.width,
-			'min-height': (svg.height / 4),
+			'min-height': (svg.height / 2),
 			'background': svg.pattern.dataUrl
 		});
 	} else {
@@ -9907,7 +9903,7 @@ var svgDraw2 = function(resize){
 		});
 		$('#contact-background-2').css({
 			'min-width': svg.width,
-			'min-height': (svg.height / 4),
+			'min-height': (svg.height / 2),
 			'background': svg.pattern.dataUrl
 		});
 	} else {
@@ -9944,7 +9940,7 @@ $(window).resize(function() {
 	});
 	$('#contact-container').css({
 		'min-width': svg.width,
-		'min-height': (svg.height / 4)
+		'min-height': (svg.height / 2)
 	});
 	svgDraw1('resize');
 	svgDraw2('resize');
