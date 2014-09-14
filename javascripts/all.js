@@ -9823,10 +9823,6 @@ $(document).ready(function(){
 			'min-width': width,
 			'min-height': (height / 2)
 		});
-		// $("#contact").css({
-		// 	'max-width': width
-		// });
-
 	
 	// call new svg and start recreate svg timeout
 	svgNew();
