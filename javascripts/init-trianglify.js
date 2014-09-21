@@ -1,5 +1,3 @@
-// could probably refactor this...
-
 $(document).ready(function(){
 	// set #background-* to full window height and fade in the body
 	var width = $(window).width();

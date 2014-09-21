@@ -9,7 +9,7 @@ $(document).ready(function(){
 	});
 
 	$('#weatherify-link').on('click', function(){
-		window.open('http://weatherify.ninefold-apps.com/', '_blank');
+		window.open('http://weatherify.herokuapp.com/', '_blank');
 	});
 
 	$('#bero-link').on('click', function(){
