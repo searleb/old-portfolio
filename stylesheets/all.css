@@ -8911,7 +8911,7 @@ small {
 
 /* line 131, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #show-more-button {
-  margin-left: 15px;
+  margin-top: 40px;
   margin-bottom: 40px; }
 
 /* line 136, /Users/Bill/development/projects/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
@@ -8939,4 +8939,3 @@ article {
 .btn {
   border: 1px solid #374140;
   border-radius: 4px; }
-
