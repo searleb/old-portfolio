@@ -9982,6 +9982,14 @@ $(document).ready(function(){
 	$('#nerd-link').on('click', function(){
 		window.open('http://fancifulnerd.com/', '_blank');
 	});
+
+	$('#clock-demo-link').on('click', function(){
+		window.open('http://billsearle.me/hex-clock/', '_blank');
+	});
+
+	$('#clock-install-link').on('click', function(){
+		window.open('https://chrome.google.com/webstore/detail/hex-clock/pdonflklnjbgccapfenhjdanehgejbkj', '_blank');
+	});
 });
 
 
