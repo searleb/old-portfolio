@@ -21,7 +21,7 @@ $(document).ready(function(){
 	});
 
 	$('#alt-link').on('click', function(){
-		window.open('http://alt-shft.com/', '_blank');
+		window.open('http://billsearle.me/altshft/', '_blank');
 	});
 
 	$('#untitled-link').on('click', function(){
