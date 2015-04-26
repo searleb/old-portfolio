@@ -8896,8 +8896,8 @@ body {
 
 /* line 116, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .project {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: inline-block;
   vertical-align: middle; }
 
@@ -8921,10 +8921,10 @@ small {
 
 /* line 141, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 a {
-  color: #353F3E; }
+  color: #000; }
   /* line 143, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
   a:hover {
-    color: #000000;
+    color: #353F3E;
     text-decoration: none; }
 
 /* line 150, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */

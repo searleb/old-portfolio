@@ -9943,6 +9943,7 @@ $(window).resize(function() {
   ga('send', 'pageview');
 $(document).ready(function(){
 	$('.show-more').on('click', function(){
+		$('#more-projects').velocity("fadeIn", { duration: 750 });
 		$(this).velocity({ 
 			height: '0px',
 			'margin-top': '0px',
@@ -9952,10 +9953,9 @@ $(document).ready(function(){
 			border: 'none' 
 		},{
 			duration: 500,
-			delay: 850
+			delay: 250
 		})
-		.velocity("scroll", { delay: 550, duration: 1200, easing: "ease"});
-		$('#more-projects').velocity("fadeIn", { duration: 750 });
+		.velocity("scroll", { duration: 1200, easing: "ease"});
 	});
 	
 	$('.fa-angle-down').on('click', function(){
