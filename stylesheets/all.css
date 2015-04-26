@@ -8912,29 +8912,30 @@ small {
 /* line 131, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #show-more-button {
   margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  overflow: hidden; }
 
-/* line 136, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 137, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 #more-projects {
   display: none; }
 
-/* line 140, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 141, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 a {
   color: #353F3E; }
-  /* line 142, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+  /* line 143, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
   a:hover {
     color: #000000;
     text-decoration: none; }
 
-/* line 149, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 150, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 article {
   display: inline-block;
   margin: 10px; }
-  /* line 152, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+  /* line 153, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
   article a > p {
     font-family: "Raleway", "Helvetica", sans-serif; }
 
-/* line 157, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
+/* line 158, /Applications/XAMPP/xamppfiles/htdocs/portfolio/searleb.github.io/source/stylesheets/all.css.scss */
 .btn {
   border: 1px solid #374140;
   border-radius: 4px; }

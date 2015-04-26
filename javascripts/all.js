@@ -9943,8 +9943,19 @@ $(window).resize(function() {
   ga('send', 'pageview');
 $(document).ready(function(){
 	$('.show-more').on('click', function(){
-			$('#more-projects').velocity("fadeIn", { duration: 1200 });
-			$('.show-more').velocity("scroll", { duration: 1200, easing: "ease-in-out" }).css({ "display": "none" });
+		$(this).velocity({ 
+			height: '0px',
+			'margin-top': '0px',
+			'margin-bottom': '0px',
+			padding: '0px 12px',
+			opacity: '0',
+			border: 'none' 
+		},{
+			duration: 500,
+			delay: 850
+		})
+		.velocity("scroll", { delay: 550, duration: 1200, easing: "ease"});
+		$('#more-projects').velocity("fadeIn", { duration: 750 });
 	});
 	
 	$('.fa-angle-down').on('click', function(){
