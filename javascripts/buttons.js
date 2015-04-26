@@ -39,4 +39,11 @@ $(document).ready(function(){
 	$('#clock-install-link').on('click', function(){
 		window.open('https://chrome.google.com/webstore/detail/hex-clock/pdonflklnjbgccapfenhjdanehgejbkj', '_blank');
 	});
+
+	$('#text-clock-demo-link').on('click', function(){
+		window.open('http://searleb.github.io/text-clock/', '_blank');
+	});
+	$('#text-clock-install-link').on('click', function(){
+		window.open('https://chrome.google.com/webstore/detail/text-clock/caacmmeopdailkdlgkimndodjipilaha', '_blank');
+	});
 });

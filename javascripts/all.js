@@ -9806,15 +9806,7 @@ $(document).ready(function(){
 	// set #background-* to full window height and fade in the body
 	var width = $(window).width();
 	var height = $(window).height();
-		$('#background-container').css({
-			'min-width': width,
-			'min-height': height
-		});
-		$('#background-1').css({
-			'min-width': width,
-			'min-height': height
-		});
-		$('#background-2').css({
+		$('#background-container, #background-1, #background-2').css({
 			'min-width': width,
 			'min-height': height
 		});
@@ -9989,6 +9981,13 @@ $(document).ready(function(){
 
 	$('#clock-install-link').on('click', function(){
 		window.open('https://chrome.google.com/webstore/detail/hex-clock/pdonflklnjbgccapfenhjdanehgejbkj', '_blank');
+	});
+
+	$('#text-clock-demo-link').on('click', function(){
+		window.open('http://searleb.github.io/text-clock/', '_blank');
+	});
+	$('#text-clock-install-link').on('click', function(){
+		window.open('https://chrome.google.com/webstore/detail/text-clock/caacmmeopdailkdlgkimndodjipilaha', '_blank');
 	});
 });
 
