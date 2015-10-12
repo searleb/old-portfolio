@@ -1,20 +1,20 @@
 $(document).ready(function(){
 	$('.show-more').on('click', function(){
 		$('#more-projects').velocity("fadeIn", { duration: 750 });
-		$(this).velocity({ 
+		$(this).velocity({
 			height: '0px',
 			'margin-top': '0px',
 			'margin-bottom': '0px',
 			padding: '0px 12px',
 			opacity: '0',
-			border: 'none' 
+			border: 'none'
 		},{
 			duration: 500,
 			delay: 250
 		})
 		.velocity("scroll", { duration: 1200, easing: "ease"});
 	});
-	
+
 	$('.fa-angle-down').on('click', function(){
 		$('#recent-projects').velocity("scroll", { duration: 1200, easing: "ease-in-out" });
 	});
@@ -32,11 +32,11 @@ $(document).ready(function(){
 	});
 
 	$('#alt-link').on('click', function(){
-		window.open('http://alt-shft.com/', '_blank');
+		window.open('http://searleb.github.io/alt_shft/', '_blank');
 	});
 
 	$('#untitled-link').on('click', function(){
-		window.open('http://billsearle.me/untitledproductions/', '_blank');
+		window.open('http://searleb.github.io/untitled-productions', '_blank');
 	});
 
 	$('#nerd-link').on('click', function(){
@@ -44,7 +44,7 @@ $(document).ready(function(){
 	});
 
 	$('#clock-demo-link').on('click', function(){
-		window.open('http://billsearle.me/hex-clock/', '_blank');
+		window.open('http://searleb.github.io/color-clock/', '_blank');
 	});
 
 	$('#clock-install-link').on('click', function(){
@@ -54,7 +54,13 @@ $(document).ready(function(){
 	$('#text-clock-demo-link').on('click', function(){
 		window.open('http://searleb.github.io/text-clock/', '_blank');
 	});
+
 	$('#text-clock-install-link').on('click', function(){
 		window.open('https://chrome.google.com/webstore/detail/text-clock/caacmmeopdailkdlgkimndodjipilaha', '_blank');
 	});
+
+	$('#coffee-demo-link').on('click', function(){
+		window.open('https://chrome.google.com/webstore/detail/text-clock/caacmmeopdailkdlgkimndodjipilaha', '_blank');
+	});
+
 });
