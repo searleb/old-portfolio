@@ -10003,7 +10003,7 @@ $(window).resize(function() {
   	});
 
   	$('#coffee-demo-link').on('click', function(){
-  		window.open('https://chrome.google.com/webstore/detail/text-clock/caacmmeopdailkdlgkimndodjipilaha', '_blank');
+  		window.open('http://searleb.github.io/mf-coffee/dist/#/', '_blank');
   	});
 
   });
