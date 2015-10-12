@@ -9815,7 +9815,7 @@ $(document).ready(function(){
 			'min-width': width,
 			'min-height': (height / 2)
 		});
-	
+
 	// call new svg and start recreate svg timeout
 	svgNew();
 	recreateSvg();
@@ -9838,7 +9838,7 @@ $(document).ready(function(){
 var svg = {};
 // used to determine which background to draw to
 var draw = 1
-// create new svg 
+// create new svg
 var svgNew = function(){
 	svg.t = new Trianglify({
 		noiseIntensity: 0,
@@ -9859,7 +9859,7 @@ var svgNew = function(){
 // if called with resize, redraw the svg to match new size and do not call fade
 var svgDraw1 = function (resize){
 	draw = 2
-	if (resize === 'resize') {	
+	if (resize === 'resize') {
 		svg.pattern = svg.t.generate(svg.width, svg.height);
 		$('#background-1').css({
 			'min-width': svg.width,
@@ -9882,7 +9882,7 @@ var svgDraw1 = function (resize){
 // same as above but for bg2
 var svgDraw2 = function(resize){
 	draw = 1
-	if (resize === 'resize') {	
+	if (resize === 'resize') {
 		svg.pattern = svg.t.generate(svg.width, svg.height);
 		$('#background-2').css({
 			'min-width': svg.width,
@@ -9941,69 +9941,69 @@ $(window).resize(function() {
 
   ga('create', 'UA-54388947-1', 'auto');
   ga('send', 'pageview');
-$(document).ready(function(){
-	$('.show-more').on('click', function(){
-		$('#more-projects').velocity("fadeIn", { duration: 750 });
-		$(this).velocity({ 
-			height: '0px',
-			'margin-top': '0px',
-			'margin-bottom': '0px',
-			padding: '0px 12px',
-			opacity: '0',
-			border: 'none' 
-		},{
-			duration: 500,
-			delay: 250
-		})
-		.velocity("scroll", { duration: 1200, easing: "ease"});
-	});
-	
-	$('.fa-angle-down').on('click', function(){
-		$('#recent-projects').velocity("scroll", { duration: 1200, easing: "ease-in-out" });
-	});
+  $(document).ready(function(){
+  	$('.show-more').on('click', function(){
+  		$('#more-projects').velocity("fadeIn", { duration: 750 });
+  		$(this).velocity({
+  			height: '0px',
+  			'margin-top': '0px',
+  			'margin-bottom': '0px',
+  			padding: '0px 12px',
+  			opacity: '0',
+  			border: 'none'
+  		},{
+  			duration: 500,
+  			delay: 250
+  		})
+  		.velocity("scroll", { duration: 1200, easing: "ease"});
+  	});
 
-	$('#weatherify-link').on('click', function(){
-		window.open('http://weatherify.herokuapp.com/', '_blank');
-	});
+  	$('.fa-angle-down').on('click', function(){
+  		$('#recent-projects').velocity("scroll", { duration: 1200, easing: "ease-in-out" });
+  	});
 
-	$('#bero-link').on('click', function(){
-		window.open('http://bero.herokuapp.com/', '_blank');
-	});
+  	$('#weatherify-link').on('click', function(){
+  		window.open('http://weatherify.herokuapp.com/', '_blank');
+  	});
 
-	$('#message-link').on('click', function(){
-		window.open('http://tweet-in-a-bottle.herokuapp.com/', '_blank');
-	});
+  	$('#bero-link').on('click', function(){
+  		window.open('http://bero.herokuapp.com/', '_blank');
+  	});
 
-	$('#alt-link').on('click', function(){
-		window.open('http://alt-shft.com/', '_blank');
-	});
+  	$('#message-link').on('click', function(){
+  		window.open('http://tweet-in-a-bottle.herokuapp.com/', '_blank');
+  	});
 
-	$('#untitled-link').on('click', function(){
-		window.open('http://billsearle.me/untitledproductions/', '_blank');
-	});
+  	$('#alt-link').on('click', function(){
+  		window.open('http://searleb.github.io/alt_shft/', '_blank');
+  	});
 
-	$('#nerd-link').on('click', function(){
-		window.open('http://fancifulnerd.com/', '_blank');
-	});
+  	$('#untitled-link').on('click', function(){
+  		window.open('http://searleb.github.io/untitled-productions', '_blank');
+  	});
 
-	$('#clock-demo-link').on('click', function(){
-		window.open('http://billsearle.me/hex-clock/', '_blank');
-	});
+  	$('#nerd-link').on('click', function(){
+  		window.open('http://fancifulnerd.com/', '_blank');
+  	});
 
-	$('#clock-install-link').on('click', function(){
-		window.open('https://chrome.google.com/webstore/detail/hex-clock/pdonflklnjbgccapfenhjdanehgejbkj', '_blank');
-	});
+  	$('#clock-demo-link').on('click', function(){
+  		window.open('http://searleb.github.io/color-clock/', '_blank');
+  	});
 
-	$('#text-clock-demo-link').on('click', function(){
-		window.open('http://searleb.github.io/text-clock/', '_blank');
-	});
-	$('#text-clock-install-link').on('click', function(){
-		window.open('https://chrome.google.com/webstore/detail/text-clock/caacmmeopdailkdlgkimndodjipilaha', '_blank');
-	});
-});
+  	$('#clock-install-link').on('click', function(){
+  		window.open('https://chrome.google.com/webstore/detail/hex-clock/pdonflklnjbgccapfenhjdanehgejbkj', '_blank');
+  	});
 
+  	$('#text-clock-demo-link').on('click', function(){
+  		window.open('http://searleb.github.io/text-clock/', '_blank');
+  	});
 
+  	$('#text-clock-install-link').on('click', function(){
+  		window.open('https://chrome.google.com/webstore/detail/text-clock/caacmmeopdailkdlgkimndodjipilaha', '_blank');
+  	});
 
+  	$('#coffee-demo-link').on('click', function(){
+  		window.open('https://chrome.google.com/webstore/detail/text-clock/caacmmeopdailkdlgkimndodjipilaha', '_blank');
+  	});
 
-
-
+  });
